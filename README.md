@@ -456,13 +456,6 @@ MIT License
 
 ---
 
-Here is a **clean, structured, installation‑ready section** you can drop directly into your `README.md`.  
-It explains the **exact folder layout**, **Rust build steps**, **server build**, and **Python setup** in a way that is reproducible and friendly for anyone reviewing your repo.
-
-Everything below is written to integrate smoothly with the rest of your README.
-
----
-
 # 🔧 Installation & Setup
 
 This project requires both **Rust** (for the fingerprinting backend) and **Python** (for the organizer and metadata tools).  
