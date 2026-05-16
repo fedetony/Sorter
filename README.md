@@ -647,4 +647,22 @@ These tools validate that fingerprinting and metadata lookup pipelines are worki
 
 ---
 
-Enjoy 
+## 💸 Support My Work
+
+If **Sorter** has helped you, consider supporting development:
+
+- **G1 (Junas Cesium):** `D9CFSvUHQDJJ4iFExVU4fTMAidADV8kedabeqtV6o3CS`  
+- **BTC (Bitcoin):** `n211bgvuTVfwFoV6xwcHE5pPe4zWuQ27je`  
+- Or become a sponsor via [GitHub Sponsors](https://github.com/sponsors/fedetony)
+
+---
+
+<div align="center">
+
+<br><br>
+
+**☕ With Coffee & Love by FG ❤️**
+
+</div>
+
+
