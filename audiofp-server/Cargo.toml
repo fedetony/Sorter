@@ -1,0 +1,20 @@
+[package]
+name = "audiofp-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+audiofp = { path = "../../audiofp", features = ["std"] }
+symphonia = { version = "0.5.5", features = ["mp3", "aac", "flac", "ogg", "vorbis", "wav", "isomp4", "pcm"] }
+axum = { version = "0.7", features = ["macros", "json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tower = "0.4"
+hyper = { version = "1", features = ["full"] }
+hyper-util = { version = "0.1", features = ["tokio"] }
+once_cell = "1.19"
+walkdir = "2.5"
+rusqlite = { version = "0.31", features = ["bundled"] }
+bincode = "1"
+thiserror = "1"

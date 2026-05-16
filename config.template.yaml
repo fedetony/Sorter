@@ -1,0 +1,70 @@
+# ============================================================
+#  AudioFP Configuration
+#  This file stores your API keys and headers.
+#  DO NOT COMMIT THIS FILE TO GIT.
+# ============================================================
+
+# ------------------------------------------------------------
+# AcoustID API Key
+# ------------------------------------------------------------
+# How to obtain:
+# 1. Go to https://acoustid.org/login
+# 2. Log in using GitHub or MusicBrainz (safe, no email required)
+# 3. Visit https://acoustid.org/api-key
+# 4. Generate a new API key
+#
+# This key identifies your *application*, not you personally.
+# ------------------------------------------------------------
+acoustid_api_key: "YOUR_ACOUSTID_API_KEY_HERE"
+
+
+# ------------------------------------------------------------
+# User-Agent Header (required by MusicBrainz)
+# ------------------------------------------------------------
+# MusicBrainz requires a proper User-Agent string:
+# Format: AppName/Version (contact-info)
+#
+# Example:
+#   AudioFP/1.0 (me@example.com)
+#
+# Contact info can be:
+# - an email
+# - a GitHub profile URL
+# - or even a placeholder if you prefer privacy
+#
+# They do NOT use it to contact you — it's only for API etiquette.
+# ------------------------------------------------------------
+headers:
+  User-Agent: "AudioFP/1.0 (https://github.com/yourprofile)"
+
+
+# ------------------------------------------------------------
+# Optional: Fingerprint server URL
+# ------------------------------------------------------------
+# If you run your own Chromaprint/AudiFP server, put it here.
+# Example:
+#   http://localhost:5000/fingerprint
+# ------------------------------------------------------------
+fingerprint_server:
+  host: "127.0.0.1"
+  port: 5000
+  base: "http://127.0.0.1:5000"
+
+server_path: "audiofp-server/target/release"
+
+# Do not change file:
+server_file: "audiofp-server"
+
+# ------------------------------------------------------------
+# Optional: SQLite database path
+# ------------------------------------------------------------
+# Where your metadata + fingerprints will be stored.
+# ------------------------------------------------------------
+database: "databases/audiofp.db"
+
+# ------------------------------------------------------------
+# Cache database: SQLite database path
+# ------------------------------------------------------------
+# Where MusicBrainz searches are stored.
+# ------------------------------------------------------------
+cache_database: "databases/musicbrainz_cache.db"
